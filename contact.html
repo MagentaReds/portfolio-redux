@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- using Normalize.css instead of Reset.css-->
+  <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css" />
+
+  <!-- Latest compiled and minified Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+
+
+  <title>Grant Daniels: About Me</title>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div calss="row">
+      <div class="col-md-8 col-sm-7 col-xs-12">
+        <div class="navbar-header myNavHeader text-center">
+            <h1>Grant Daniels</h1>
+        </div>
+      </div>
+
+      <div class="clearfix visible-xs"></div>
+
+      <div class="col-md-4 col-sm-5 col-xs-12">
+        <br>
+        <ul class="nav nav-pills nav-justified my_justified_fix">
+          <li role="presentation"><a class="header_link" href="index.html">About</a></li>
+          <li role="presentation"><a href="portfolio.html">Portfolio</a></li>
+          <li role="presentation" class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container" id="main_wrapper">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 content-center" id="main_content">
+
+      <h2>Contact Me</h2><hr>
+      
+      <form action="mailto:grantodaniels@gmail.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for"nameInput">Name:</label>
+          <input type="name" class="form-control" id="nameInput" placeholder="John Smith">
+        </div>
+        <div class="form-group">
+          <label for"emailInput">Name:</label>
+          <input type="email" class="form-control" id="emailInput" placeholder="example@something.com">
+        </div>
+        <div class="form-group">
+          <label for"commentInput">Comment:</label>
+          <textarea type="comment" class="form-control" id="commentInput"></textarea>
+        </div>
+        <input id="submit" type="submit" class="btn btn-primary" value="Submit">
+      </form>
+      <br>
+
+      
+    </div>
+
+    <div class="clearfix visible-sm col-sm-12"><br></div>
+    <div class="clearfix visible-xs col-xs-12"><br></div>
+
+    <div class="col-md-3 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1" id="side_content">
+      <h3 class="text-center">Connect with me</h3>
+      <hr>
+      <div id="side_images" class="text-center">
+        <a href="https://github.com/MagentaReds" target="_blank"><img src="./assets/images/github.png" title="GitHub" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/grant-daniels-06869876" target="_blank"><img src="./assets/images/linkedin.png" title="LinkedIn" alt="LinkedIn" /></a>
+        <a href="http://stackoverflow.com/users/7329010/grant-daniels" target="_blank"><img src="./assets/images/stack_overflow.png" title="Stack Overflow" alt="Stack Overflow" /></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<br>
+
+<footer class="footer text-center">
+  <div class="footer_below">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+            © Copyright 2017 Grant Daniels
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
