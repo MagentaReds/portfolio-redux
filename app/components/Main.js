@@ -3,8 +3,12 @@
 // var Link = require("react-router-dom").Link;
 
 import {Route, Link} from "react-router-dom";
-
 import React, {Component} from "react";
+
+import ProjectModal from "./children/project_modal.js";
+import ProjectEntry from "./children/project_entry.js";
+
+var projects = require("./helpers/modal_entries.js");
 
 class Main extends Component {
 
@@ -22,7 +26,14 @@ class Main extends Component {
   render() {
     return (
       <div className="container">
-        <p> HELLO WORLD </p>
+        {projects.map((data, index) => {
+          return ( 
+            <div key={index}>
+              <ProjectEntry col="col-md-3" entry={data} />
+              <ProjectModal entry={data} />
+            </div>
+          );
+        })}
       </div>
     );
   }
