@@ -7,6 +7,7 @@ import React, {Component} from "react";
 
 import ProjectModal from "./children/project_modal.js";
 import ProjectEntry from "./children/project_entry.js";
+import NavBar from "./children/nav_bar.js";
 
 var projects = require("./helpers/modal_entries.js");
 
@@ -25,16 +26,28 @@ class Main extends Component {
 
   render() {
     return (
-      <div className="container">
-        {projects.map((data, index) => {
-          return ( 
-            <div key={index}>
-              <ProjectEntry col="col-md-3" entry={data} />
-              <ProjectModal entry={data} />
+
+      <section>
+
+        <NavBar/>
+
+        <section id="portfolio">
+          <div className="container">
+          <div className="row">
+
+            {projects.map((data, index) => {
+              return ( 
+                <div key={index}>
+                  <ProjectEntry col="col-md-3" entry={data} />
+                  <ProjectModal entry={data} />
+                </div>
+              );
+            })}
+
             </div>
-          );
-        })}
-      </div>
+          </div>
+        </section>
+      </section>
     );
   }
 }
