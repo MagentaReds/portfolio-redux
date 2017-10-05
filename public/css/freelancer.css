@@ -525,25 +525,3 @@ fieldset[disabled] .btn-success.active {
 div#maincontent {
   outline: none;
 }
-
-
-/*===========New Stuff=============*/
-.pos-relative {
-  position: relative;
-}
-
-.zindex10 {
-  z-index: 10;
-}
-
-.overlay-text {
-  position: absolute;
-  background-color: #00B060;
-  color: #ffffff;
-  bottom: 10%;
-  margin:auto;
-  width: 100%;
-  text-align: center;
-  font-size: 25px;
-  z-index: 5;
-}
